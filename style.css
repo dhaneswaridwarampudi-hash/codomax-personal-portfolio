@@ -403,3 +403,47 @@ section:not(.home) h1 {
         padding: 25px;
     }
 }
+
+/* Dark Mode - Black and Gold */
+
+body.dark-mode {
+    background-color: #000000;
+    color: #D4AF37;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode li {
+    color: #D4AF37;
+}
+
+body.dark-mode header,
+body.dark-mode nav {
+    background-color: #111111;
+}
+
+body.dark-mode .education-card,
+body.dark-mode .skill-card,
+body.dark-mode .project-card,
+body.dark-mode .contact-card,
+body.dark-mode .about-container {
+    background-color: #151515;
+    border: 1px solid #D4AF37;
+}
+
+body.dark-mode .btn {
+    background-color: #D4AF37;
+    color: #000000;
+}
+
+#theme-toggle {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid #D4AF37;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
