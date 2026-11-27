@@ -583,3 +583,58 @@ body {
     }
 }
 
+/* Animated Gold Particle Background */
+
+.home {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.home::before,
+.home::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(212, 175, 55, 0.22),
+        transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+    animation: goldFloat 7s ease-in-out infinite alternate;
+}
+
+.home::before {
+    top: 5%;
+    right: 10%;
+}
+
+.home::after {
+    bottom: 0;
+    right: 40%;
+    animation-delay: 2s;
+}
+
+@keyframes goldFloat {
+    from {
+        transform: translate(0, 0) scale(0.8);
+    }
+    to {
+        transform: translate(-35px, 35px) scale(1.3);
+    }
+}
+
+/* Dark mode glow */
+body.dark-mode .home::before,
+body.dark-mode .home::after {
+    background: radial-gradient(
+        circle,
+        rgba(255, 215, 0, 0.25),
+        transparent 70%
+    );
+}
+
