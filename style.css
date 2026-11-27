@@ -471,3 +471,34 @@ body.dark-mode .about-container {
     background-color: #151515 !important;
     border: 1px solid #D4AF37;
 }
+
+/* Gold buttons in Dark Mode */
+
+body.dark-mode .btn,
+body.dark-mode #theme-toggle {
+    background-color: #D4AF37;
+    color: #000000;
+    border: 1px solid #D4AF37;
+    font-weight: bold;
+}
+
+/* Gold hover effect */
+
+body.dark-mode .btn:hover,
+body.dark-mode #theme-toggle:hover {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+/* Gold project links */
+
+body.dark-mode .project-card a,
+body.dark-mode .contact-card a {
+    color: #FFD700;
+}
+
+/* Gold section headings */
+
+body.dark-mode .section-title {
+    color: #FFD700;
+}
