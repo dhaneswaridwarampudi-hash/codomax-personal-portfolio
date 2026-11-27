@@ -404,101 +404,74 @@ section:not(.home) h1 {
     }
 }
 
-/* Dark Mode - Black and Gold */
+
+/* =====================================
+   DARK MODE - BLACK AND GOLD
+===================================== */
 
 body.dark-mode {
-    background-color: #000000;
-    color: #D4AF37;
+    background-color: #000000 !important;
+    color: #D4AF37 !important;
 }
 
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode p,
-body.dark-mode a,
-body.dark-mode li {
-    color: #D4AF37;
-}
-
+/* All main backgrounds */
 body.dark-mode header,
-body.dark-mode nav {
-    background-color: #111111;
-}
-
-body.dark-mode .education-card,
-body.dark-mode .skill-card,
-body.dark-mode .project-card,
-body.dark-mode .contact-card,
-body.dark-mode .about-container {
-    background-color: #151515;
-    border: 1px solid #D4AF37;
-}
-
-body.dark-mode .btn {
-    background-color: #D4AF37;
-    color: #000000;
-}
-
-#theme-toggle {
-    background-color: transparent;
-    color: inherit;
-    border: 1px solid #D4AF37;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* Make all sections black in Dark Mode */
-
-body.dark-mode,
+body.dark-mode nav,
 body.dark-mode section,
+body.dark-mode footer,
 body.dark-mode .home,
 body.dark-mode .about,
 body.dark-mode .education,
 body.dark-mode .skills,
 body.dark-mode .projects,
 body.dark-mode .contact {
+    background: #000000 !important;
     background-color: #000000 !important;
-    color: #D4AF37;
 }
 
-/* Keep cards slightly lighter than the background */
+/* All text */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p,
+body.dark-mode a,
+body.dark-mode span,
+body.dark-mode li {
+    color: #D4AF37 !important;
+}
+
+/* All cards */
+body.dark-mode .about-content,
+body.dark-mode .about-container,
 body.dark-mode .education-card,
 body.dark-mode .skill-card,
 body.dark-mode .project-card,
-body.dark-mode .contact-card,
-body.dark-mode .about-container {
+body.dark-mode .contact-card {
+    background: #151515 !important;
     background-color: #151515 !important;
-    border: 1px solid #D4AF37;
+    border: 1px solid #D4AF37 !important;
 }
 
-/* Gold buttons in Dark Mode */
+/* Project technology labels */
+body.dark-mode .project-card span {
+    background: #222222 !important;
+    color: #D4AF37 !important;
+}
 
+/* Buttons */
 body.dark-mode .btn,
 body.dark-mode #theme-toggle {
-    background-color: #D4AF37;
-    color: #000000;
-    border: 1px solid #D4AF37;
+    background: #D4AF37 !important;
+    color: #000000 !important;
+    border: 1px solid #D4AF37 !important;
     font-weight: bold;
 }
 
-/* Gold hover effect */
-
+/* Button hover */
 body.dark-mode .btn:hover,
 body.dark-mode #theme-toggle:hover {
-    background-color: #FFD700;
-    color: #000000;
+    background: #FFD700 !important;
+    color: #000000 !important;
 }
 
-/* Gold project links */
-
-body.dark-mode .project-card a,
-body.dark-mode .contact-card a {
-    color: #FFD700;
-}
-
-/* Gold section headings */
-
-body.dark-mode .section-title {
-    color: #FFD700;
-}
